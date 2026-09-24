@@ -14,7 +14,13 @@ namespace _23.feladat
             int szam = int.Parse(Console.ReadLine());
             Console.Write("Kérek egy másik számot:  ");
             int szam2 = int.Parse(Console.ReadLine());
-            Console.WriteLine((szam>szam2)?szam-szam2:szam2-szam);
+            //Console.WriteLine((szam>szam2)?szam-szam2:szam2-szam);
+            if (szam == szam2)
+                Console.WriteLine($"A két szám egyenlő");
+            else if (szam>szam2)
+                Console.WriteLine($"Eredmény: {szam-szam2}");
+            else
+                Console.WriteLine($"Eredmény: {szam2 - szam}");
 
 
             Console.ReadKey();
